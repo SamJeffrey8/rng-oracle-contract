@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rng-oracle-contract"
+version = "0.1.0"
+description = "RNG Oracle Contract"
+authors = ["Sam Jeffrey M"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.11"
+opshin = "^0.16.1"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
